@@ -1,0 +1,43 @@
+{
+  "name": "@yeap/light-css-parser",
+  "version": "1.0.0",
+  "description": "The light css parser for Yeap",
+  "main": "./build/lib.js",
+  "types": "./build/lib.d.ts",
+  "type": "module",
+  "files": [
+    "build/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "format": "prettier -w ./src ./tests",
+    "prepack": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeapjs/css-light-parser.git"
+  },
+  "keywords": [
+    "yeap",
+    "front-end",
+    "css",
+    "parser"
+  ],
+  "author": "hanako-eo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeapjs/css-light-parser/issues"
+  },
+  "homepage": "https://github.com/yeapjs/css-light-parser#readme",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^0.34.6",
+    "prettier": "^3.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  }
+}
